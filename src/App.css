@@ -1,38 +1,278 @@
-.App {
-  text-align: center;
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Body Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background-color: #f7f7f7;
+  color: #333;
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Header Styling */
+header {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background: linear-gradient(135deg, #c30b11, #ea7575);
+  padding: 30px 20px;
+  border-radius: 0 0 15px 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  color: white;
+  text-align: center;
+}
+
+/* Logo Container */
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Company Logo */
+.logo {
+  max-width: 150px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  display: block;
+}
+
+/* Company Title */
+header h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Navigation Styling */
+nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li {
+  margin: 0;
+}
+
+.nav-links li a {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  background-color: white;
+  color: #ff7e5f;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Main Sections */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.hero button {
+  padding: 15px 30px;
+  background-color: white;
+  color: #ff7e5f;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+}
+
+.hero button:hover {
+  background-color: #feb47b;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* About Us Section */
+.about {
+  background-color: white;
+  padding: 50px 20px;
+  text-align: center;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
 }
+
+.about p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+/* Menu Section */
+.menu {
+  background-color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.menu-item {
+  margin-bottom: 20px;
+}
+
+.menu-item h3 {
+  font-size: 1.8rem;
+  color: #ff7e5f;
+}
+
+.menu-item p {
+  font-size: 1.4rem;
+  color: #555;
+}
+
+.menu button {
+  padding: 15px 30px;
+  background-color: #ff7e5f;
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+}
+
+.menu button:hover {
+  background-color: #feb47b;
+}
+
+/* Testimonials Section */
+.testimonials {
+  background-color: #ff7e5f;
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+  margin-bottom: 40px;
+  border-radius: 10px;
+}
+
+.testimonials h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.testimonials p {
+  font-size: 1.4rem;
+  font-style: italic;
+  line-height: 1.8;
+}
+
+/* Contact Us Section */
+.contact {
+  background-color: white;
+  padding: 50px 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.contact form {
+  display: grid;
+  gap: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  padding: 15px;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+}
+
+.contact form button {
+  padding: 15px 30px;
+  background-color: #ff7e5f;
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+}
+
+.contact form button:hover {
+  background-color: #feb47b;
+}
+
+.contact p {
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+.contact p a {
+  color: #ff7e5f;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact p a:hover {
+  text-decoration: underline;
+}
+
