@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/panthers-pocket/static/css/main.a1dadc1f.css",
+    "main.js": "/panthers-pocket/static/js/main.acd88316.js",
+    "static/js/453.bdc0ae4c.chunk.js": "/panthers-pocket/static/js/453.bdc0ae4c.chunk.js",
+    "static/media/logo.svg": "/panthers-pocket/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/panthers-pocket/index.html",
+    "main.a1dadc1f.css.map": "/panthers-pocket/static/css/main.a1dadc1f.css.map",
+    "main.acd88316.js.map": "/panthers-pocket/static/js/main.acd88316.js.map",
+    "453.bdc0ae4c.chunk.js.map": "/panthers-pocket/static/js/453.bdc0ae4c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a1dadc1f.css",
+    "static/js/main.acd88316.js"
+  ]
+}
